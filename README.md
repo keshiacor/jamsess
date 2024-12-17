@@ -18,10 +18,12 @@ https://github.com/keshiacor/jammming.git
 ```
 
 - Navigate to the project directory and install npm the dependencies using npm
-  `npm install`
+
+`npm install`
 
 - Run the project
-  `npm start`
+
+`npm start`
 
 ### Features
 
