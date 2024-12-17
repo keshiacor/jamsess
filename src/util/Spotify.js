@@ -1,5 +1,5 @@
 //this is where we'll handle the user authorization with pkce flow 
-
+/*
 const clientId = ""; //client id from spotify
 const redirectUri = 'http://localhost:3000';
 const params = new URLSearchParams(window.location.search);
@@ -67,4 +67,4 @@ export async function getAccessToken(clientId, code) {
   return access_token;
 }
 
-export default Spotify;
+export default Spotify;*/ 

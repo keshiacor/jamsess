@@ -9,7 +9,7 @@ import SearchBar from "../SearchBar/SearchBar.js";
 function App() {
   return (
     <div className="App">
-     
+     <p> JamSess is coming soon!</p>
     </div>
   );
 }
