@@ -1,6 +1,6 @@
-# JamSess Spotify App
+# JamSess
 
-In progress
+In progress and expected to be fully functional by 12/31/2024. Happy holidays folks!
 
 ### Description
 
@@ -19,11 +19,15 @@ https://github.com/keshiacor/jammming.git
 
 - Navigate to the project directory and install npm the dependencies using npm
 
-`npm install`
+```
+npm install
+```
 
 - Run the project
 
-`npm start`
+```
+npm start
+```
 
 ### Features
 
