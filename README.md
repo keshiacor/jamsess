@@ -1,6 +1,6 @@
 # JamSess
 
-In progress and expected to be fully functional by 12/31/2024. Happy holidays folks!
+In progress and expected to be fully functional by 01/05/2025. Happy holidays folks!
 
 ### Description
 
