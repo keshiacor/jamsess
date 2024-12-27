@@ -1,12 +1,22 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 import "./Tracklist.css";
+import Track from "../Track/Track.js";
 
-// return song name, artist, and album for each track in the results list
 const Tracklist = (props) => {
-
   return (
     <div className = "Tracklist">
-
+      {props.tracks.map((track) => {
+        return (
+          <Track
+            track={track}
+            key={track.id}
+            onClick={props.onClick}
+            isRemoval={props.isRemoval}
+          />
+        );
+      })}
     </div>
   )
-}
+};
+
+export default Tracklist;
