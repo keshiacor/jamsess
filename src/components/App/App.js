@@ -11,7 +11,7 @@ const App = () => {
 
   const [searchResults, setSearchResults] = useState('');
   const [playlistName, setPlaylistName]= useState('New Playlist');
-  const [playlist, setPlaylist] = useState([]);
+  const [playlistTrack, setPlaylistTracks] = useState([]);
   
   const tracks = [{
       id: '1',
@@ -40,19 +40,22 @@ const App = () => {
 
     //add track to the user's playlist
     const onAddToPlaylist = useCallback((track) => {
-      if(!playlist.some((existingTrack) => existingTrack.id === track.id)) {
-        setPlaylist([...playlist, track]);
+      if(!playlistTrack.some((existingTrack) => existingTrack.id === track.id)) {
+        setPlaylistTracks([...playlistTrack, track]);
       }
     });
     //remove a track from the user's playlist
     const removeTrackFromPlaylist = useCallback((track) => {
-      setPlaylist(playlist.filter((existingTrack) => existingTrack.id !== track.id));
+      setPlaylistTracks(playlistTrack.filter((existingTrack) => existingTrack.id !== track.id));
     });
     
   return (
     <div className="App">
      <p> JamSess is coming soon!</p>
-     <Tracklist tracks={tracks} />
+     
+     <Playlist
+     //to do: pass the playlist name, playlist tracks, and the methods to update the playlist name and remove a track from the playlist
+          />
     </div>
   );
 };
