@@ -4,9 +4,9 @@ import "../css/Track.css";
 const Track = (props) => {
   
   const addSong = useCallback((event) => {
-    props.add(props.track);
+    props.onAdd(props.track);
   },
-  [props.add, props.track]);
+  [props.onAdd, props.track]);
 
   const removeSong = useCallback((event) => {
     props.onRemoveTrack(props.track);
@@ -14,16 +14,14 @@ const Track = (props) => {
   [props.onRemoveTrack, props.track]);
 
  
-
+  
   const handleClickTrack = () => {
-    if (props.trackRemoved) {
-      removeSong(props.track);
+    if (props.isRemoved) {
       return (
         <button className="button-action" onClick={removeSong}>
           -
-        </button>)
+        </button>);
     } else {
-      addSong(props.track);
       return (
         <button className="button-action" onClick={addSong}>
          +
@@ -37,7 +35,13 @@ const Track = (props) => {
         <h3>{props.track.name}</h3>
         <p>Artist: {props.track.artist} | Album: {props.track.album}</p>
       </div>
-        {handleClickTrack()}
+        { // Add a button to add or remove a track from the playlist
+          /** 
+          <button className="button-action" onClick={handleClickTrack()}>
+            {props.isRemoved ? "-" : "+"}  
+            </button> */
+            handleClickTrack()
+        }
     </div>
   );
 };

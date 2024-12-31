@@ -52,7 +52,7 @@ function App() {
         <SearchBar onSearch={search}/>
       </div>
       <div className="ResultsSection">
-        <SearchResults searchResults={searchResults} addSong={addToPlaylist} />
+        <SearchResults searchResults={searchResults} onAdd={addToPlaylist} />
       </div>
      
      <div className="PlaylistContainer"> 

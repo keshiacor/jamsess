@@ -10,10 +10,9 @@ const Tracklist = (props) => {
           <Track
             track={track}
             key={track.id} 
-            addSong={props.addSong}
-            //removeSong={props.removeSong}
+            onAdd={props.onAdd}
+            onRemove={props.removeSong}
             isRemoved={props.isRemoved}
-            trackRemoved={props.trackRemoved}
           />
         );
       })}

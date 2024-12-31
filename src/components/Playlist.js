@@ -22,7 +22,7 @@ return (
         trackRemoved={true}
         onRemoveTrack={props.onRemoveTrack}
       />
-    <button className='savePlaylist-button' onClick={props.onSave}>
+    <button className='savePlaylist-button' onClick={props.savePlaylist}>
     Save To Spotify
     </button>
   </div>
