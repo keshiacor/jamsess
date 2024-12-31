@@ -1,5 +1,6 @@
-import React, { useState, useCallback } from "react";
+import React, {useCallback } from "react";
 import "./Playlist.css";
+import Tracklist from "../Tracklist/Tracklist";
 
 const Playlist = (props) => {
   const updatePlaylistName = useCallback(
@@ -9,10 +10,14 @@ const Playlist = (props) => {
     [props.onUpdate]
   );
 
+  const savePlaylist = useCallback(() => {
+    props.onSave();
+  }, [props.onSave]);
+
 return (
   <div className='playlist-save'>
       <input onChange={updatePlaylistName} defaultValue={"New Playlist"} />
-      <TrackList
+      <Tracklist
         tracks={props.playlistTracks}
         isRemoval={true}
       />

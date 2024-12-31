@@ -1,10 +1,15 @@
-import React, { useCallback } from "react";
+import React from "react";
 import "./Track.css";
 
-const Track = ({ track, onClick, isRemoval }) => {
-  const trackAction = useCallback(() => {
-    onClick(track);
-  }, [onClick, track]);
+const Track = ({ track, addSong, removeSong,isRemoved }) => {
+  
+  const handleClickTrack = () => {
+    if (isRemoved) {
+      removeSong(track);
+    } else {
+      addSong(track);
+    }
+  };
 
   return (
     <div className="Track">
@@ -12,11 +17,12 @@ const Track = ({ track, onClick, isRemoval }) => {
         <h3>{track.name}</h3>
         <p>Artist: {track.artist} | Album: {track.album}</p>
       </div>
-      <button className="button-action" onClick={trackAction}>
-        {isRemoval ? "-" : "+"}
+      <button className="button-action" onClick={handleClickTrack}>
+        {isRemoved ? "-" : "+"}
       </button>
     </div>
   );
 };
 
 export default Track;
+

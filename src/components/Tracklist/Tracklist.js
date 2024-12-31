@@ -5,13 +5,14 @@ import Track from "../Track/Track.js";
 const Tracklist = (props) => {
   return (
     <div className = "Tracklist">
-      {props.tracks.map((track) => {
+      {props.tracks && props.tracks.map((track) => {
         return (
           <Track
             track={track}
-            key={track.id}
-            onClick={props.onClick}
-            isRemoval={props.isRemoval}
+            key={track.id} 
+            addSong={props.addToPlaylist}
+            isRemoved={props.isRemoved}
+            onRemoveTrack={props.onRemoveTrack}
           />
         );
       })}
