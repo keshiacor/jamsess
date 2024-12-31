@@ -1,9 +1,9 @@
 import React, {useState, useCallback} from 'react';
-import './App.css';
-import Spotify from "../../util/Spotify.js";
-import Playlist from "../Playlist/Playlist.js";
-import SearchResults from "../SearchResults/SearchResults.js";
-import SearchBar from "../SearchBar/SearchBar.js";
+import '../css/App.css';
+import Spotify from "../util/Spotify.js";
+import Playlist from "./Playlist.js";
+import SearchResults from "./SearchResults.js";
+import SearchBar from "./SearchBar.js";
 
 
 function App() {
@@ -17,13 +17,13 @@ function App() {
         Spotify.search(inputSearch).then(setSearchResults);
     },[]);
 
-    //add track to the user's playlist
+    
     const addToPlaylist = useCallback((track) => {
       if(!playlistTrack.some((existingTrack) => existingTrack.id === track.id)) {
         setPlaylistTracks([...playlistTrack, track]);
       }
     },[playlistTrack]);
-    //remove a track from the user's playlist
+   
     const removeFromPlaylist = useCallback((track) => {
       setPlaylistTracks(playlistTrack.filter((existingTrack) => existingTrack.id !== track.id));
     }, [playlistTrack]);
@@ -52,7 +52,7 @@ function App() {
         <SearchBar onSearch={search}/>
       </div>
       <div className="ResultsSection">
-        <SearchResults searchResults={searchResults} onAdd={addToPlaylist} />
+        <SearchResults searchResults={searchResults} addSong={addToPlaylist} />
       </div>
      
      <div className="PlaylistContainer"> 
@@ -64,7 +64,7 @@ function App() {
         onSave={savePlaylist} />
     </div>
       <footer className="footer">
-        <p> © Copyright Keshia C. 2024 <a href="https://www.linkedin.com/in/keshia-coriolan/"> Keshia C.</a></p>
+        <p> © Copyright <a href="https://www.linkedin.com/in/keshia-coriolan/">Keshia C. 2024</a></p>
       </footer> 
     </div>
 

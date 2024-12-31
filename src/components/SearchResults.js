@@ -1,13 +1,13 @@
 import React from "react";
-import "./SearchResults.css";
-import Tracklist from "../Tracklist/Tracklist";
+import "../css/SearchResults.css";
+import Tracklist from "./Tracklist.js";
 
 const SearchResults = (props) => {
 
   return (
     <div className="SearchResults">
       <h2>Matching results:</h2>
-      <Tracklist tracks={props.searchResults} addSong={props.addToPlaylist} />
+      <Tracklist tracks={props.searchResults} addSong={props.addSong} />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
-import "./Tracklist.css";
-import Track from "../Track/Track.js";
+import "../css/Tracklist.css";
+import Track from "./Track.js";
 
 const Tracklist = (props) => {
   return (
@@ -10,9 +10,10 @@ const Tracklist = (props) => {
           <Track
             track={track}
             key={track.id} 
-            addSong={props.addToPlaylist}
+            addSong={props.addSong}
+            //removeSong={props.removeSong}
             isRemoved={props.isRemoved}
-            onRemoveTrack={props.onRemoveTrack}
+            trackRemoved={props.trackRemoved}
           />
         );
       })}

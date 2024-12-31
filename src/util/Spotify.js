@@ -3,8 +3,8 @@ code verification and accessing the spotify api */
 
 const clientId = "06a9a154ff0a4cf69e2a6ded5835ab4e"; //client id from spotify
 const redirectUri = 'http://localhost:3000';
-let accessToken = new URLSearchParams(window.location.search).get("code");
-
+let accessToken;
+ 
 const Spotify = {
   getAccessToken() {
     if (accessToken) {

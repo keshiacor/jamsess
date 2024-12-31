@@ -1,6 +1,6 @@
 import React, {useCallback } from "react";
-import "./Playlist.css";
-import Tracklist from "../Tracklist/Tracklist";
+import "../css/Playlist.css";
+import Tracklist from "./Tracklist.js";
 
 const Playlist = (props) => {
   const updatePlaylistName = useCallback(
@@ -19,7 +19,8 @@ return (
       <input onChange={updatePlaylistName} defaultValue={"New Playlist"} />
       <Tracklist
         tracks={props.playlistTracks}
-        isRemoval={true}
+        trackRemoved={true}
+        onRemoveTrack={props.onRemoveTrack}
       />
     <button className='savePlaylist-button' onClick={props.onSave}>
     Save To Spotify

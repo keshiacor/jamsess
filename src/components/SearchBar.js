@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import "./SearchBar.css";
+import "../css/SearchBar.css";
 
 const SearchBar = ({ onSearch }) => {
   const [searchInput, setSearchInput] = useState("");
@@ -12,7 +12,7 @@ const SearchBar = ({ onSearch }) => {
   const debouncedSearch = useCallback(
     debounce((input) => {
       onSearch(input);
-    }, 500), // Adjust debounce delay as needed
+    }, 10), 
     [onSearch]
   );
 
@@ -25,12 +25,12 @@ const SearchBar = ({ onSearch }) => {
     <div>
       <input
         aria-label="Search for a song"
-        placeholder="Enter the song title here"
+        placeholder="Looking for a song?"
         value={searchInput}
         onChange={handleSearchChange}
       />
       <button className="search-button" onClick={handleSearch}>
-        Search
+         Search
       </button>
     </div>
   );
