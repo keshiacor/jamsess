@@ -5,9 +5,9 @@ import Tracklist from "./Tracklist.js";
 const Playlist = (props) => {
   const updatePlaylistName = useCallback(
     (event) => {
-      props.onUpdate(event.target.value);
-    },
-    [props.onUpdate]
+      props.onUpdateName(event.target.value);
+    }
+    //[props.onUpdateName]
   );
 
   const savePlaylist = useCallback(() => {
@@ -16,13 +16,13 @@ const Playlist = (props) => {
 
 return (
   <div className='playlist-save'>
-      <input onChange={updatePlaylistName} defaultValue={"New Playlist"} />
+      <input onChange={updatePlaylistName} defaultValue={"New Playlist"} value={props.playlistName} />
       <Tracklist
         tracks={props.playlistTracks}
         isRemoved={true}
         onRemove={props.onRemove}
       />
-    <button className='savePlaylist-button' onClick={props.savePlaylist}>
+    <button className='savePlaylist-button' onClick={props.onSave}>
     Save To Spotify
     </button>
   </div>
