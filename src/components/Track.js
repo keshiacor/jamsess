@@ -9,9 +9,9 @@ const Track = (props) => {
   [props.onAdd, props.track]);
 
   const removeSong = useCallback((event) => {
-    props.onRemoveTrack(props.track);
+    props.onRemove(props.track);
   },
-  [props.onRemoveTrack, props.track]);
+  [props.onRemove, props.track]);
 
  
   
@@ -35,11 +35,7 @@ const Track = (props) => {
         <h3>{props.track.name}</h3>
         <p>Artist: {props.track.artist} | Album: {props.track.album}</p>
       </div>
-        { // Add a button to add or remove a track from the playlist
-          /** 
-          <button className="button-action" onClick={handleClickTrack()}>
-            {props.isRemoved ? "-" : "+"}  
-            </button> */
+        { 
             handleClickTrack()
         }
     </div>
