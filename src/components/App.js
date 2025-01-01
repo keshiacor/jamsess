@@ -60,7 +60,7 @@ function App() {
         playlistName={playlistName}
         playlistTracks={playlistTrack}
         onUpdateName={updatePlaylist}
-        onRemoveTrack={removeFromPlaylist}
+        onRemove={removeFromPlaylist}
         onSave={savePlaylist} />
     </div>
       <footer className="footer">

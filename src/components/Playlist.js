@@ -19,7 +19,7 @@ return (
       <input onChange={updatePlaylistName} defaultValue={"New Playlist"} />
       <Tracklist
         tracks={props.playlistTracks}
-        trackRemoved={true}
+        isRemoved={true}
         onRemoveTrack={props.onRemoveTrack}
       />
     <button className='savePlaylist-button' onClick={props.savePlaylist}>
