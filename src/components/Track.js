@@ -2,16 +2,17 @@ import React, { useCallback } from "react";
 import "../css/Track.css";
 
 const Track = (props) => {
-  
+  const { onAdd, onRemove, track } = props;
+
   const addSong = useCallback((event) => {
-    props.onAdd(props.track);
+    onAdd(track);
   },
-  [props.onAdd, props.track]);
+  [onAdd, track]);
 
   const removeSong = useCallback((event) => {
-    props.onRemove(props.track);
+    onRemove(track);
   },
-  [props.onRemove, props.track]);
+  [onRemove, track]);
 
  
   
@@ -32,8 +33,8 @@ const Track = (props) => {
   return (
     <div className="Track">
       <div className='Track_details'>
-        <h3>{props.track.name}</h3>
-        <p>Artist: {props.track.artist} | Album: {props.track.album}</p>
+        <h3>{track.name}</h3>
+        <p>Artist: {track.artist} | Album: {track.album}</p>
       </div>
         { 
             handleClickTrack()

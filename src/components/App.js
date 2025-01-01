@@ -64,7 +64,9 @@ function App() {
         onSave={savePlaylist} />
     </div>
       <footer className="footer">
-        <p> © Copyright <a href="https://www.linkedin.com/in/keshia-coriolan/">Keshia C. 2024</a></p>
+        <ul> © Copyright Keshia C. 2024</ul>
+        <ul><a href="https://www.linkedin.com/in/keshia-coriolan/"> LinkedIn </a></ul>
+        <ul><a href="https://github.com/keshiacor"> GitHub </a></ul>
       </footer> 
     </div>
 
