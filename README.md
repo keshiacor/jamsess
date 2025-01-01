@@ -14,7 +14,7 @@ Please note this app is currently under development.
 - Clone the repository
 
 ```
-https://github.com/keshiacor/jammming.git
+https://github.com/keshiacor/jamsess.git
 ```
 
 - Navigate to the project directory and install npm the dependencies using npm
