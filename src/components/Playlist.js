@@ -1,11 +1,12 @@
 import React, { useCallback, useState } from "react";
 import "../css/Playlist.css";
 import Tracklist from "./Tracklist.js";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 const Playlist = (props) => {
-  const { onUpdateName, playlistName } = props;
-  const [placeholder, setPlaceholder] = useState("New Playlist");
+  const { onUpdateName, playlistName, playlistTracks, onSave, onRemove } = props;
+  const [placeholder, setPlaceholder] = useState("Enter Playlist Name");
 
   const updatePlaylistName = useCallback(
     (event) => {
@@ -18,18 +19,42 @@ const Playlist = (props) => {
     setPlaceholder(""); 
   };
 
+  const handleSave = () => {
+   
+    if (playlistTracks.length === 0) {
+      toast.error("Oops,looks like you haven't added a song to the playlist yet!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        className: 'custom-toast'
+      });
+    } else {
+      onSave();
+    }
+  };
+
   return (
     <div className='playlist-save'>
-      <input onChange={updatePlaylistName} placeholder={placeholder}
-      value={playlistName} className='playlistEdit' onFocus={handleFocus}/>
-      <Tracklist
-        tracks={props.playlistTracks}
-        isRemoved={true}
-        onRemove={props.onRemove}
+      <input 
+        onChange={updatePlaylistName} 
+        placeholder={placeholder}
+        value={playlistName} 
+        className='playlistEdit' 
+        onFocus={handleFocus}
       />
-    <button className='savePlaylist-button' onClick={props.onSave}>
-    Save To Spotify
-    </button>
+      <Tracklist
+        tracks={playlistTracks}
+        isRemoved={true}
+        onRemove={onRemove}
+      />
+      <button className='savePlaylist-button' onClick={handleSave}>
+        Save To Spotify
+      </button>
+      <ToastContainer position="top-right"/>
     </div>
   );
 };

@@ -54,8 +54,7 @@ function App() {
       </header>
       <div className="BannerContainer">
         <h2>
-          Search for your favorite songs on Spotify and add them to your
-          playlist
+          Your music destination!
         </h2>
       </div>
 
@@ -79,12 +78,10 @@ function App() {
         </div>
       </div>
       <footer className="footer">
-        <ul> © Copyright Keshia C. 2024</ul>
-        <ul>
-          <a href="https://www.linkedin.com/in/keshia-coriolan/"> LinkedIn </a>
-        </ul>
-        <ul>
-          <a href="https://github.com/keshiacor"> GitHub </a>
+        <ul> 
+          <li>© Copyright Keshia C. 2024</li>
+          <li><a href="https://www.linkedin.com/in/keshia-coriolan/"> LinkedIn </a></li>
+          <li><a href="https://github.com/keshiacor"> GitHub </a></li>
         </ul>
       </footer>
     </div>

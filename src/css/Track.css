@@ -1,5 +1,3 @@
-/*Need to update the color of the text for track h3 and p*/
-
 .Track {
   display: flex;
   align-items: center;
@@ -17,20 +15,21 @@
   justify-self: right;
 }
 
-.Track-details {
+.Track_details {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 72px;
+  height: 120px;
 }
 
-.Track-details h3 {
+.Track_details h3 {
   margin-bottom: .22rem;
+  color: #292008;
 }
 
-.Track-details p {
-  font-size: .83rem;
-  font-weight: 300;
-  color: rgba(256, 256, 256, 0.8);
+.Track_details p {
+  color:#533F10;
+  font-weight: 400;
+  
 }

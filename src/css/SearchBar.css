@@ -2,7 +2,7 @@
 .SearchSection {
   display: flex; 
   justify-content: space-between; 
-  width: 300px; 
+  width: 400px; 
   margin: 20px auto;
 }
 
@@ -19,7 +19,7 @@
   font-size: 16px;
   cursor: pointer;
   font-weight: bolder;
-  background-color:rgba(230, 126, 34,1);
+  background-color:rgba(230, 126, 34,0.6);
 }
 
 .search-button:hover{

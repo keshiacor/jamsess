@@ -1,18 +1,16 @@
 body{
-  background-image: url('/src/ray-mallick-5J1bHRX1fNw-unsplash.jpg');
+  background-image: url('/src/luke-chesser-tgrBcf7S_dY-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  /*color:aliceblue;*/
   color:#0b454d;
 }
 
 
 .MainContainer{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap:wrap;
+  justify-content: center;
   gap: 20px;
-  
 }
 
 .ResultsSection{
@@ -43,15 +41,40 @@ h2{
 }
 
 footer{
-  display: flex;
-  flex-direction: row;
+  display:block;
+  width:100%;
   text-align: center;
   padding: 2px;
   color: #0000;
   font-weight: 600;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  
+}
+
+ul{
+  color: white;
+  display: flex;  
+  list-style: none;  
+  margin: 0; 
+  padding: 0; 
   justify-content: center;
-  margin-bottom: 0px;
+}
+
+li{
+  margin-right: 20px; 
+}
+
+li:hover {
+  color:black ;
+}
+
+footer li:last-child {
+  margin-right: 0; 
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+footer a:hover{
+  color: black;
+  text-decoration: none;
 }

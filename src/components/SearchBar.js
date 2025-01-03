@@ -25,7 +25,7 @@ const SearchBar = ({ onSearch }) => {
     <div className='SearchSection'>
       <input
         aria-label="Search for a song"
-        placeholder="Looking for a song?"
+        placeholder="Search by title, artist or album"
         value={searchInput}
         onChange={handleSearchChange}
         className='search-input'
