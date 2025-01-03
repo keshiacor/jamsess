@@ -1,0 +1,12 @@
+.SearchResults{
+  box-sizing: border-box;
+  background-color: #fbf47a;
+  color: #0b454d;
+  padding-left: 10px;
+  height: 950px;
+  overflow-y: scroll;
+  box-shadow: 0 4px 2px 2px rgba();
+  width:500px;
+  text-overflow: ellipsis;
+}
+

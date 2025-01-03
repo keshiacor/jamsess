@@ -1,10 +1,57 @@
 body{
-  background-image: url('/src/alphacolor-66JMudIjDTw-unsplash.jpg');
+  background-image: url('/src/ray-mallick-5J1bHRX1fNw-unsplash.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  /*color:aliceblue;*/
+  color:#0b454d;
 }
 
-.App {
+
+.MainContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  
+}
+
+.ResultsSection{
+  overflow-y: auto;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.PlaylistContainer{
+  overflow-y: auto;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+h1{
+  
+  margin: 0;
+  padding: 10px;
   text-align: center;
- 
+  color:black;
+  
 }
 
+h2{
+  padding: 2px;
+  text-align: center;
+  color:black;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 2px;
+  color: #0000;
+  font-weight: 600;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 0px;
+}

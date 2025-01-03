@@ -22,12 +22,13 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div>
+    <div className='SearchSection'>
       <input
         aria-label="Search for a song"
         placeholder="Looking for a song?"
         value={searchInput}
         onChange={handleSearchChange}
+        className='search-input'
       />
       <button className="search-button" onClick={handleSearch}>
          Search

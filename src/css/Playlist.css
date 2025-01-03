@@ -1,0 +1,43 @@
+.playlist-save{
+  box-sizing: border-box;
+  background-color: #fbf47a;
+  color: #0b454d;
+  padding-left: 10px;
+  overflow-y: scroll;
+  box-shadow: 0 4px 2px 2px rgba();
+  width:500px;
+  text-overflow: ellipsis;
+  height: 950px;
+  
+}
+  
+
+.savePlaylist-button{
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 54px;
+  border-width: 0px;
+  background-color:rgba(230, 126, 34,1);
+  margin-top: 10px;
+  margin-left: 35%;
+}
+
+
+.savePlaylist-button:hover{
+  background-color: rgba(249, 180, 45,1);
+}
+
+.savePlaylist-button:active{
+  background-color:rgba(235, 149, 50,1);
+  
+}
+
+.playlistEdit{
+  border:0;
+  background: transparent;
+  border-bottom: 1px solid #0b454d;
+  outline: none;
+  width: 100%;
+  padding-bottom: 5px;
+}

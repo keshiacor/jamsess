@@ -1,9 +1,11 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import "../css/Playlist.css";
 import Tracklist from "./Tracklist.js";
 
+
 const Playlist = (props) => {
   const { onUpdateName, playlistName } = props;
+  const [placeholder, setPlaceholder] = useState("New Playlist");
 
   const updatePlaylistName = useCallback(
     (event) => {
@@ -12,9 +14,14 @@ const Playlist = (props) => {
     [onUpdateName]
   );
 
+  const handleFocus = () => {
+    setPlaceholder(""); 
+  };
+
   return (
     <div className='playlist-save'>
-      <input onChange={updatePlaylistName} defaultValue={"New Playlist"} value={playlistName} />
+      <input onChange={updatePlaylistName} placeholder={placeholder}
+      value={playlistName} className='playlistEdit' onFocus={handleFocus}/>
       <Tracklist
         tracks={props.playlistTracks}
         isRemoved={true}

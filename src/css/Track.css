@@ -1,3 +1,5 @@
+/*Need to update the color of the text for track h3 and p*/
+
 .Track {
   display: flex;
   align-items: center;
@@ -7,15 +9,12 @@
 .button-action {
   cursor: pointer;
   padding: .5rem;
-  font-size: 1.05rem;
+  font-size: 1.8rem;
   transition: color .25s;
   border: 0px;
   background-color: rgba(0, 0, 0, 0);
-  color: #fff;
-}
-
-.button-action:hover {
-  color: rgba(265, 265, 265, .5);
+  color: black;
+  justify-self: right;
 }
 
 .Track-details {

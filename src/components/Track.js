@@ -36,9 +36,11 @@ const Track = (props) => {
         <h3>{track.name}</h3>
         <p>Artist: {track.artist} | Album: {track.album}</p>
       </div>
+      <div>
         { 
             handleClickTrack()
         }
+        </div>
     </div>
   );
 };

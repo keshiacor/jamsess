@@ -1,0 +1,32 @@
+
+.SearchSection {
+  display: flex; 
+  justify-content: space-between; 
+  width: 300px; 
+  margin: 20px auto;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; 
+  box-sizing: border-box; 
+  border:2px solid black;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bolder;
+  background-color:rgba(230, 126, 34,1);
+}
+
+.search-button:hover{
+  background-color: rgba(249, 180, 45,1);
+}
+
+.search-button:active{
+  background-color:rgba(235, 149, 50,1);
+  
+}
