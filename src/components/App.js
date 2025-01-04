@@ -50,6 +50,7 @@ function App() {
   return (
     <div className="App">
       <header>
+        <img src= "../JamSess.png" alt="JamSess logo" />
         <h1>JamSess</h1>
       </header>
       <div className="BannerContainer">

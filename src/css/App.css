@@ -5,6 +5,11 @@ body{
   color:#0b454d;
 }
 
+h1{
+  font-family: 'Genty,Verdana, Geneva, Tahoma, sans-serif';
+  font-size: 3.5rem;
+}
+
 
 .MainContainer{
   display: flex;

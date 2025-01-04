@@ -1,7 +1,5 @@
 # JamSess
 
-Please note this app is currently in progress.
-V0 is expected to be fully functional by 01/05/2025.
 ![JamSess app](https://github.com/keshiacor/jamsess/blob/main/src/JamSess.png)
 
 ### Description
@@ -9,7 +7,7 @@ V0 is expected to be fully functional by 01/05/2025.
 JamSess is a serverless web application that allows users to search for songs, albums, and artists using the Spotify API. Users can add or remove a song to a playlist that can be saved to their Spotify account. The application is built using React, uses the Spotify API and deployed on Netlify.
 
 For a running version of the app, visit [JamSess](https://jamsess.netlify.app/).
-Please note this app is currently under development.
+Please note this app is currently under development. While V0 is completed and fully functional, V1 with additional features is in progress.
 
 ### Getting Started
 
