@@ -41,7 +41,7 @@ npm start
 
 ### Demo
 
-To see a demo video of the app, you can checkout this [Loom video](https://www.loom.com/share/660a3ee5d0e040518f003ac9469c8bdd?sid=40db050b-950b-41f8-8518-735dfe47dbdd).
+To see a demo video of the app, you can checkout this [Loom video](https://www.loom.com/share/582f6ad357484d099640dd1c6266b21b).
 
 ### Technologies
 
