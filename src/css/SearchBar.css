@@ -30,3 +30,12 @@
   background-color:rgba(235, 149, 50,1);
   
 }
+
+@media (max-width: 600px) {
+  .SearchSection{
+   display: flex; 
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 250px; 
+  }
+}

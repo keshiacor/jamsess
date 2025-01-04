@@ -55,3 +55,17 @@
 .custom-toast-error .Toastify__progress-bar {
   background-color: #ffff !important; 
 }
+
+@media (max-width: 600px) {
+  .savePlaylist-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 24px;
+    border-width: 0px;
+    background-color:rgba(230, 126, 34,1);
+    margin-top: 10px;
+    margin-left: 20%;
+    font-weight: bolder;
+  }
+}
