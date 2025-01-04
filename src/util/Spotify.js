@@ -1,7 +1,4 @@
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-const clientId = "06a9a154ff0a4cf69e2a6ded5835ab4e"; //client id from spotify
+const clientId='06a9a154ff0a4cf69e2a6ded5835ab4e';
 const redirectUri = 'http://localhost:3000';
 let accessToken;
  
