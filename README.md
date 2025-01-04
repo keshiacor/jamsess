@@ -23,6 +23,7 @@ https://github.com/keshiacor/jamsess.git
 npm install
 ```
 
+- You will need to create a Spotify Developer account and create a new app to obtain a client ID and secret. Follow the instructions on the [Spotify API documentation](https://developer.spotify.com/documentation/web-api/concepts/apps) to get started
 - Run the project
 
 ```
