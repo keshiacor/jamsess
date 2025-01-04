@@ -2,7 +2,7 @@
 
 Please note this app is currently in progress.
 V0 is expected to be fully functional by 01/05/2025.
-![JamSess app](https://github.com/keshiacor/)
+![JamSess app](https://github.com/keshiacor/jamsess/blob/main/src/JamSess.png)
 
 ### Description
 
@@ -70,4 +70,4 @@ Users will be able to preview the track by clicking on the play button.
 
 ### Track image
 
-Users will be able to see the album image of the track
+Users will be able to see the album image of the track. This will appear with their search results.
