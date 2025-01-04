@@ -1,8 +1,7 @@
 .playlist-save{
-  
   box-sizing: border-box;
   background-color: #fbf47a;
-  opacity: 0.7;
+  /*opacity: 0.5;*/
   color: #0b454d;
   padding-left: 10px;
   overflow-y: scroll;
@@ -54,4 +53,18 @@
 
 .custom-toast-error .Toastify__progress-bar {
   background-color: #ffff !important; 
+}
+
+@media (max-width: 600px) {
+  .savePlaylist-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 24px;
+    border-width: 0px;
+    background-color:rgba(230, 126, 34,1);
+    margin-top: 10px;
+    margin-left: 20%;
+    font-weight: bolder;
+  }
 }

@@ -1,8 +1,9 @@
 import React, { useCallback } from "react";
 import "../css/Track.css";
+import previewIcon from '../previewButton.gif';
 
 const Track = (props) => {
-  const { onAdd, onRemove, track } = props;
+  const { onAdd, onRemove, track, onPreview, play } = props;
 
   const addSong = useCallback((event) => {
     onAdd(track);
@@ -30,11 +31,32 @@ const Track = (props) => {
     }
   };
 
+  const previewSong = () => {
+    onPreview(track.id);
+  }
+
+  const playSong = () => {
+    return play === track.id ? <img className='sound-bar' src={previewIcon} alt='Playing' /> :
+    track.previewUrl === null ? <i className="fa-solid fa-play unclickable" onClick={ previewSong }></i> : <i className="fa-solid fa-play" onClick={ previewSong }></i>;
+};
+  
+
   return (
     <div className="Track">
       <div className='Track_details'>
-        <h3>{track.name}</h3>
-        <p>Artist: {track.artist} | Album: {track.album}</p>
+      <div className='Track-play'>
+                { playSong() }
+      </div>
+      <div className='Track-container'>
+        <img src={track.image } alt="" /> 
+      </div>
+        <div className='Track_i'>
+          <ul>
+          <li><h3>{track.name}</h3> </li>
+          <li> Artist: {track.artist} </li>
+          <li> Album: {track.album}</li>
+          </ul>
+        </div>
       </div>
       <div>
         { 

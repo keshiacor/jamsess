@@ -1,7 +1,4 @@
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-const clientId = "06a9a154ff0a4cf69e2a6ded5835ab4e"; //client id from spotify
+const clientId = process.env.REACT_APP_CLIENT_ID; //client id from spotify app
 const redirectUri = 'http://localhost:3000';
 let accessToken;
  
@@ -42,7 +39,9 @@ const Spotify = {
         name: track.name,
         artist: track.artists[0].name,
         album: track.album.name,
-        uri: track.uri
+        uri: track.uri,
+        image: track.album.images[0].url,
+        previewUrl: track.preview_url
       }));
     });
   },

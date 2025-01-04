@@ -1,12 +1,12 @@
 .Track {
   display: flex;
-  align-items: center;
   border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+  flex-direction: row;
 }
 
 .button-action {
   cursor: pointer;
-  padding: .5rem;
+  padding: 1.5rem;
   font-size: 1.8rem;
   transition: color .25s;
   border: 0px;
@@ -22,14 +22,72 @@
   justify-content: center;
   height: 120px;
 }
+.Track-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;;
+  margin: 10 auto;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
 
-.Track_details h3 {
+.Track_i h3 {
   margin-bottom: .22rem;
   color: #292008;
 }
 
-.Track_details p {
+.Track_i li {
   color:#533F10;
   font-weight: 400;
-  
+  float: left;
+  text-align: center;
+}
+
+ img {
+  height: 55px;
+  width: 55px;
+  margin-left:5px;
+}
+
+@media (max-width: 600px) {
+  .Track_details{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .Track_details p{
+    width:100%;
+    white-space: normal;  
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+
+  .Track_details h3{
+    width:100%;
+    white-space: normal;  
+    word-wrap: break-word;
+  }
+
+  .Track_i{
+    width: 100%;
+    white-space: normal;  
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+
+  .button-action {
+    cursor: pointer;
+    transition: color .25s;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    display:grid;
+    margin-right: 40%;
+    padding: 1.5rem;
+  }
 }

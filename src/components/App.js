@@ -10,7 +10,7 @@ function App() {
   const [playlistName, setPlaylistName] = useState("");
   const [playlistTrack, setPlaylistTracks] = useState([]);
 
-  //search for a track  using the Spotify API
+ 
   const search = useCallback((inputSearch) => {
     Spotify.search(inputSearch).then(setSearchResults);
   }, []);
