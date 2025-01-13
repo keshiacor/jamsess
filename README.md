@@ -61,7 +61,7 @@ To see a demo video of the app, you can checkout this [Loom video](https://www.l
 - NPM
 - Node
 
-## Upcoming Features
+## Upcoming Features and Work
 
 ### Preview of the track
 
@@ -70,3 +70,7 @@ Users will be able to preview the track by clicking on the play button.
 ### Track image
 
 Users will be able to see the album image of the track. This will appear with their search results.
+
+### In progress work (as of January 2025)
+Adding unit test to the app.
+Support for mobile experience.
