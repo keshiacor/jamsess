@@ -58,6 +58,7 @@ npm start
 - React-Scripts
 - NPM
 - Node
+- Spotify web API
 
 ## Roadmap/Upcoming Features and Work
 
