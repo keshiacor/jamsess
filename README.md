@@ -1,16 +1,15 @@
 # JamSess
 
-![JamSess app](https://github.com/keshiacor/jamsess/blob/main/src/JamSess.png)
+![JamSess app](https://github.com/keshiacor/jamsess/blob/main/src/interface.png)
 
 ## Description
 
 JamSess is a web application that allows users to search for songs, albums, and artists using the Spotify API. Users can add or remove a song to a playlist that can be saved to their Spotify account. The application is built using React, uses the Spotify API and deployed on Netlify.
 For a running version of the app, visit [JamSess](https://jamsess.netlify.app/).
-Please note this app is currently under development. While V1 is functional, V2 with additional features is in progress.
 
 ## 🌟 Demo
-To see a demo video of the app, you can checkout this [Loom video](https://www.loom.com/share/582f6ad357484d099640dd1c6266b21b).
 
+To see a demo video of the app, you can checkout this [Loom video](https://www.loom.com/share/582f6ad357484d099640dd1c6266b21b).
 
 ## Getting Started
 
@@ -20,7 +19,7 @@ To see a demo video of the app, you can checkout this [Loom video](https://www.l
 https://github.com/keshiacor/jamsess.git
 ```
 
-- Navigate to the project directory and install npm 
+- Navigate to the project directory and install npm
 
 ```
 npm install
@@ -32,6 +31,7 @@ npm install
 ```
 npm start
 ```
+
 ## Technologies
 
 - React: React library is used here to build the user interface, create components, manage state and props.
@@ -40,7 +40,7 @@ npm start
 - Html: The structure of the web page is built using HTML.
 - CSS: The styling of the app is done using CSS mainly.
 - JavaScript: Used as programming language to handle the interactive functionality of the app.
-  
+
 ## Features
 
 - Users can search for a song based on title, artist or album
