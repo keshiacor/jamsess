@@ -1,56 +1,123 @@
-body{
-  background-image: url('/src/JamSess-background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  color:#0b454d;
+body {
+  background: linear-gradient(135deg, #3f51b5 0%, #5c6bc0 100%);
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1{
-  font-family: 'Genty,Verdana, Geneva, Tahoma, sans-serif';
-  font-size: 3.5rem;
+.App {
+  text-align: center;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.BannerContainer{
-  height: 180px;
+header {
+  margin-bottom: 2rem;
 }
 
-.MainContainer{
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.SearchContainer {
+  background: rgba(232, 234, 246, 0.95);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+  max-width: 600px;
+  color: #1a237e;
+}
+
+.MainContainer {
   display: flex;
-  flex-wrap:wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-.ResultsSection{
+.ResultsSection {
+  flex: 1;
+  background: rgba(232, 234, 246, 0.95);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
-  max-height: 500px;
+  max-height: 600px;
+  min-width: 300px;
   max-width: 500px;
+  color: #1a237e;
 }
 
-.PlaylistContainer{
+.PlaylistContainer {
+  flex: 1;
+  background: rgba(232, 234, 246, 0.95);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
-  max-height: 500px;
+  max-height: 600px;
+  min-width: 300px;
   max-width: 500px;
+  color: #1a237e;
 }
 
-h1{
-  
-  margin: 0;
-  padding: 10px;
-  text-align: center;
-  color:black;
-  
+button {
+  background-color: #1DB954;  /* Spotify's brand green */
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-h2{
-  padding: 2px;
-  text-align: center;
-  color:black;
+button:hover {
+  background-color: #1ed760;  /* Lighter Spotify green */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-footer{
+input {
+  padding: 0.8rem 1.2rem;
+  border: 2px solid #b2ebf2;
+  border-radius: 25px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #00838f;
+  outline: none;
+}
+
+footer {
   display:block;
   width:100%;
   text-align: center;
@@ -90,24 +157,91 @@ footer a:hover{
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
-
-  body{
-    width: 100%;
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .App {
+    padding: 1.5rem;
   }
-  .MainContainer{
+
+  .MainContainer {
     flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .ResultsSection,
+  .PlaylistContainer {
+    width: 90%;
+    max-width: 600px;
+    margin: 0.5rem auto;
+    max-height: 500px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .SearchContainer {
+    width: 90%;
+    max-width: 600px;
+    padding: 1.5rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 640px) {
+  .App {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .SearchContainer {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .ResultsSection,
+  .PlaylistContainer {
+    width: 95%;
+    padding: 1rem;
+    max-height: 400px;
+  }
+
+  input {
+    max-width: 100%;
+    padding: 0.6rem 1rem;
+  }
+
+  button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    margin-top: 1.5rem;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 0.5rem;
     align-items: center;
   }
 
-  .ResultsSection{
-    max-width: 80%;
-    overflow-y: auto;
-    overflow-x:visible;
-  }
-  .PlaylistContainer{
-    max-width: 80%;
-    overflow-y: auto;
-    overflow-x: hidden;
+  footer li {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
   }
 }

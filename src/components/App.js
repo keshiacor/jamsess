@@ -50,9 +50,10 @@ function App() {
   return (
     <div className="App">
       <header>
+        {" "}
+        <h1>JamSess</h1> <h2> Spotify playlist manager</h2>
       </header>
-      <div className="BannerContainer">
-      </div>
+      <div className="BannerContainer"></div>
 
       <div className="SearchContainer">
         <SearchBar onSearch={search} />
@@ -74,10 +75,17 @@ function App() {
         </div>
       </div>
       <footer className="footer">
-        <ul> 
+        <ul>
           <li>© Copyright Keshia C. 2024</li>
-          <li><a href="https://www.linkedin.com/in/keshia-coriolan/"> LinkedIn </a></li>
-          <li><a href="https://github.com/keshiacor"> GitHub </a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/keshia-coriolan/">
+              {" "}
+              LinkedIn{" "}
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/keshiacor"> GitHub </a>
+          </li>
         </ul>
       </footer>
     </div>
