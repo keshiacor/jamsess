@@ -2,6 +2,8 @@
 
 ![JamSess app](https://github.com/keshiacor/jamsess/blob/main/src/interface.png)
 
+⚠️⚠️⚠️ App is currently being migrated to use PKCE extension instead of implicit grant due to changes made by Spotify ⚠️⚠️⚠️
+
 ## Description
 
 JamSess is a web application that allows users to search for songs, albums, and artists using the Spotify API. Users can add or remove a song to a playlist that can be saved to their Spotify account. The application is built using React, uses the Spotify API and deployed on Netlify.
