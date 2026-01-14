@@ -2,7 +2,6 @@
 
 ![JamSess app](https://github.com/keshiacor/jamsess/blob/main/src/interface.png)
 
-⚠️⚠️⚠️ 01/13/2026: App is currently being migrated to use PKCE extension instead of implicit grant due to changes made by Spotify ⚠️⚠️⚠️
 
 ## Description
 
