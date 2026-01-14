@@ -76,7 +76,7 @@ function App() {
       </div>
       <footer className="footer">
         <ul>
-          <li>© Copyright Keshia C. 2024</li>
+          <li>© Copyright Keshia C. {new Date().getFullYear()} </li>
           <li>
             <a href="https://www.linkedin.com/in/keshia-coriolan/">
               {" "}
